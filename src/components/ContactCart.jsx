@@ -28,8 +28,12 @@ const ContactCart = ({ contact }) => {
         <div className="flex gap-1">
           <HiOutlineUserCircle className="text-orange-400 text-3xl" />
           <div>
-            <h2 className="font-medium">{contact.name}</h2>
-            <p className="text-sm">{contact.gmail}</p>
+            <h2 className="font-medium max-w-[200px] truncate break-words">
+              {contact.name}
+            </h2>
+            <p className="text-sm max-w-[200px] truncate break-words">
+              {contact.gmail}
+            </p>
           </div>
         </div>
         <div className="flex text-3xl gap-1">
